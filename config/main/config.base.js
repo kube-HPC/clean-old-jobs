@@ -34,7 +34,7 @@ config.tracer = {
 
 config.maxJobAge = {
     completedMaxAgeHours: process.env.MAX_COMPLETED_JOB_AGE_HOURS || 1,
-    failedMaxAgeHours: process.env.MAX_FAILED_JOB_AGE_HOURS || 10
+    failedMaxAgeHours: process.env.MAX_FAILED_JOB_AGE_HOURS || 1
 };
 
 module.exports = config;
