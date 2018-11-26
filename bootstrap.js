@@ -4,7 +4,7 @@ const { main, logger } = configIt.load();
 const log = new Logger(main.serviceName, logger);
 const componentName = require('./common/consts/componentNames');
 const kubernetes = require('./lib/helpers/kubernetes');
-const { cleanOldJobs } = require('./lib/cleaner');
+const { init } = require('./lib/cleaner');
 const modules = [
     kubernetes
 ];
@@ -15,7 +15,7 @@ class Bootstrap {
             this._handleErrors();
             log.info('running application in ' + configIt.env() + ' environment', { component: componentName.MAIN });
             await Promise.all(modules.map(m => m.init(main)));
-            await cleanOldJobs(main.maxJobAge);
+            await init({ cleanCron: main.cleanCron, ...main.maxJobAge });
             return main;
         }
         catch (error) {

@@ -38,4 +38,6 @@ config.maxJobAge = {
     pendingMaxAgeHours: process.env.MAX_PENDING_JOB_AGE_HOURS || 0.0166, // 1 minutes
 };
 
+config.cleanCron = process.env.CLEAN_CRON || '*/1 * * * *';
+
 module.exports = config;
