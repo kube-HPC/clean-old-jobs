@@ -33,8 +33,8 @@ config.tracer = {
 };
 
 config.maxJobAge = {
-    completedMaxAgeHours: process.env.MAX_COMPLETED_JOB_AGE_HOURS || 1,
-    failedMaxAgeHours: process.env.MAX_FAILED_JOB_AGE_HOURS || 1,
+    completedMaxAgeHours: process.env.MAX_COMPLETED_JOB_AGE_HOURS || 0.0166,
+    failedMaxAgeHours: process.env.MAX_FAILED_JOB_AGE_HOURS || 0.0166,
     pendingMaxAgeHours: process.env.MAX_PENDING_JOB_AGE_HOURS || 0.0166, // 1 minutes
 };
 
