@@ -3,9 +3,11 @@ const Logger = require('@hkube/logger');
 const { main, logger } = configIt.load();
 const log = new Logger(main.serviceName, logger);
 const componentName = require('./common/consts/componentNames');
+const etcd = require('./lib/helpers/etcd.js');
 const kubernetes = require('./lib/helpers/kubernetes');
 const { init } = require('./lib/cleaner');
 const modules = [
+    etcd,
     kubernetes
 ];
 
