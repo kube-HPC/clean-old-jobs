@@ -1,6 +1,6 @@
 {
   "name": "clean-old-jobs",
-  "version": "1.1.12",
+  "version": "1.1.13",
   "description": "my micro-service",
   "main": "app.js",
   "directories": {
