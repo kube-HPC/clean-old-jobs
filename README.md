@@ -1,7 +1,7 @@
-# clean-old-jobs
+## Documentation
 
-my micro-service
+See [hkube.io](http://hkube.io/)
 
 ## License
 
-MIT &copy; [yehiyam](http://hkube.io)
+[MIT](LICENSE)
