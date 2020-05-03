@@ -1,3 +1,5 @@
+const formatter = require('../../lib/helpers/formatters');
+
 const config = {};
 
 config.serviceName = 'clean-old-jobs';
@@ -21,5 +23,12 @@ config.maxJobAge = {
 };
 
 config.cleanCron = process.env.CLEAN_CRON || '*/1 * * * *';
+
+config.healthchecks = {
+    path: process.env.HEALTHCHECK_PATH || '/healthz',
+    port: process.env.HEALTHCHECK_PORT || '5000',
+    maxDiff: process.env.HEALTHCHECK_MAX_DIFF || `${60 * 1000 * 3}`,
+    enabled: formatter.parseBool(process.env.HEALTHCHECKS_ENABLE, true)
+};
 
 module.exports = config;
