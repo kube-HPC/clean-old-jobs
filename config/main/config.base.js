@@ -6,7 +6,8 @@ config.serviceName = 'clean-old-jobs';
 
 config.kubernetes = {
     isLocal: !!process.env.KUBERNETES_SERVICE_HOST,
-    namespace: process.env.NAMESPACE || 'default'
+    namespace: process.env.NAMESPACE || 'default',
+    timeout: process.env.KUBERNETES_SERVICE_TIMEOUT || 60000
 };
 
 config.etcd = {
