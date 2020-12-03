@@ -27,12 +27,12 @@
   "license": "MIT",
   "dependencies": {
     "@hkube/config": "^2.0.7",
-    "@hkube/etcd": "^5.0.14",
+    "@hkube/etcd": "^5.1.1",
     "@hkube/healthchecks": "^1.0.0",
-    "@hkube/kubernetes-client": "^1.0.27",
-    "@hkube/logger": "^1.0.25",
-    "cron": "^1.7.2",
-    "moment": "^2.24.0"
+    "@hkube/kubernetes-client": "^1.0.32",
+    "@hkube/logger": "^1.0.26",
+    "cron": "^1.8.2",
+    "moment": "^2.29.1"
   },
   "devDependencies": {
     "chai": "^4.2.0",
