@@ -30,7 +30,7 @@
     "@hkube/etcd": "^5.0.14",
     "@hkube/healthchecks": "^1.0.0",
     "@hkube/kubernetes-client": "^1.0.27",
-    "@hkube/logger": "^1.0.25",
+    "@hkube/logger": "^2.0.1",
     "cron": "^1.7.2",
     "moment": "^2.24.0"
   },
