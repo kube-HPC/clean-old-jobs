@@ -1,6 +1,6 @@
 {
   "name": "clean-old-jobs",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "description": "clean k8s old jobs",
   "main": "app.js",
   "directories": {
